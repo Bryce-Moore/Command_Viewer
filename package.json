@@ -1,0 +1,23 @@
+{
+  "name": "command_viewer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "postinstall": "sh install_cert.sh",
+    "zip": "vite build; rm *.zip; zip-build dist ."
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.0.3",
+    "svelte": "^3.55.1",
+    "vite": "^4.2.0",
+    "zip-build": "^1.8.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.2.0"
+  }
+}
